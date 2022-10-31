@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 .App {
-  /* text-align: center; */
+  text-align: center;
 }
+
+/* .title{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+} */
