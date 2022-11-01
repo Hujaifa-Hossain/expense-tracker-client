@@ -1,5 +1,6 @@
 import { Doughnut } from 'react-chartjs-2';
 import { Chart, ArcElement } from 'chart.js'
+import Labels from './Labels';
 
 Chart.register(ArcElement)
 
@@ -27,16 +28,17 @@ const config = {
 
 const Graph = () => {
   return (
-    <div className="flex mx-auto max-w-xs">
-      <div className='item'>
-        <div className="chart relative">
-          <Doughnut {...config} />
-          <h3 className='font-bold top-20 left-20 absolute'>
-            Total <span className='block text-emerald-400 font-bold'>${0}</span>
-          </h3>
-        </div>
+    <div className="mx-auto">
+      {/* chart */}
+      <div className="chart relative">
+        <Doughnut {...config} />
+        <h3 className='font-bold top-20 left-20 absolute'>
+          Total <span className='block text-emerald-400 font-bold'>${0}</span>
+        </h3>
       </div>
-      <div>hello</div>
+
+      {/* labels  */}
+      <div className='my-6'><Labels /></div>
     </div>
   );
 };
