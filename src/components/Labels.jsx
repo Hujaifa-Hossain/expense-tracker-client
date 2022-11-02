@@ -10,12 +10,12 @@ const Labels = () => {
     },
     {
       type: 'Investment',
-      color: '#000',
+      color: '#b80000',
       percent: 35,
     },
     {
       type: 'Saving',
-      color: '#000',
+      color: '#ffd000',
       percent: 20,
     },
   ]
