@@ -1,6 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = [categories, transaction];
+const initialState = {
+  categories: [],
+  transaction: []
+};
 
 export const exportSlice = createSlice({
   name: "expense",

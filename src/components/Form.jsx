@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import List from './List';
 
 
 const Form = () => {
@@ -20,11 +21,14 @@ const Form = () => {
         </select>
 
         <input className='form-control' type="text" placeholder='Amount' />
-        
+
         <div className='bg-indigo-500 text-white p-1'>
           <button type='submit'>Make Transaction</button>
         </div>
       </form>
+      
+      {/* History  */}
+      <List/>
     </div>
   );
 };
