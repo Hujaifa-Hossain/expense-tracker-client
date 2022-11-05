@@ -1,5 +1,6 @@
 import React from 'react';
 import Label from './Label';
+import { default as api } from '../store/apiSlice'
 
 const Labels = () => {
   const data = [
@@ -19,6 +20,8 @@ const Labels = () => {
       percent: 20,
     },
   ]
+
+  console.log(api.useGetCategoriesQuery())
   return (
     <div>
       {data.map((value, i) => <Label key={i} value={value} />)}

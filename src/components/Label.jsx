@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Label = ({ value }) => {
-  console.log(value);
+  // console.log(value);
   const { type, color, percent } = value
   return (
     <div className='flex justify-between my-2'>

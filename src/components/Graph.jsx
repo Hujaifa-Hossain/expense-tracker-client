@@ -11,9 +11,9 @@ const config = {
       label: 'My First Dataset',
       data: [300, 50, 100],
       backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
+        '#ad005f',
+        '#1f2937',
+        '#eaa403',
       ],
       hoverOffset: 4,
       borderRadius: 30,
@@ -30,7 +30,7 @@ const Graph = () => {
   return (
     <div className="mx-auto">
       {/* chart */}
-      <div className="chart relative">
+      <div className="chart relative pb-3 my-4">
         <Doughnut {...config} />
         <h3 className='font-bold top-20 left-20 absolute'>
           Total <span className='block text-emerald-400 font-bold'>${0}</span>
