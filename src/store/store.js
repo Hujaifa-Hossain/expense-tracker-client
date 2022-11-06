@@ -5,7 +5,8 @@ import expenseReducer from "./reducer";
 export const store = configureStore({
   reducer: {
     expense: expenseReducer,
-    [apiSlice.reducerPath]: apiSlice.reducerPath,
+    [apiSlice.reducerPath]: apiSlice.reducer,
   },
-  middleware: getDefaultMiddleware => getDefaultMiddleware().concat(apiSlice.middleware)
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(apiSlice.middleware),
 });

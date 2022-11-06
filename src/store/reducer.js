@@ -5,7 +5,7 @@ const initialState = {
   transaction: []
 };
 
-export const exportSlice = createSlice({
+export const expenseSlice = createSlice({
   name: "expense",
   initialState,
   reducers: {
@@ -15,5 +15,5 @@ export const exportSlice = createSlice({
   },
 });
 
-export const { getTransaction } = exportSlice.actions;
-export default exportSlice.reducer;
+// export const { getTransaction } = expenseSlice.actions;
+export default expenseSlice.reducer;
